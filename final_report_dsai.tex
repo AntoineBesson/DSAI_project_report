@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Written Report}
+\author{Group 2}
+\date{20 June 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+	
+% You must help us write a short technical report (with a max length of 5000 words),  detailing the following (follow the instructions) :
+
+- Introduction, hypotheses, and motivations
+- Implementation process
+- Challenges and findings
+
+% those three must come from our previous article sent along this code. make sure to double check every information on it. do not create your own conclusions nor quote the article, only use introduction, hypotheses, motivations, implementation process, challenges and findings from the article
+
+
+% a section about the Alignment with the proposed plan at the start of the project (cf plan documents), add more information to this :
+
+late on the planning. We only managed to do 70\% of what we set out to do - we managed to finish the profiling, and achieve some optimisations, but ideally after the analysis of the optimisations and identification of bottlenecks in the existing models we wanted to innovate and create our own model that uses the results of our analysis to create an even faster mmodel.
+
+% another quesion that needs answering : Did you manage to do everything you set out to do? Why/why not? fluff it
+
+we were too ambitious and had to give up 
+
+The learning curve was steep. It was our first time doing a project in this domain, most of the members did not have much experience in the profiling tools and the techniques for optimising models. We also did not have a lot of knowledge about how the models worked on a lower GPU level and it took us some time to fill up this knowledge gap.
+
+Organisation was also sometimes a problem since it was a group project with a lot of members (6) and with everyone's schedules was sometimes complicated.
+
+% What would you do differently if you had to start over? What lessons did you learn? maybe fluff it or give us leads to continue writing, flag it incomplete if you give use leads.
+
+we took too much time to agree on a common shared protocol. We lost about one-two weeks rewriting and reorganising our code because we didn't have a shared protocol in the beginning. 
+
+Getting used to colab was hard, technical issues coupled with limited allocated GPU compute time made us lose a lot of time when executing hour long codes. We discovered onyxia far too late which would have been a better alternative since it has higher limits and is also free.
+
+
+ % use the references in the article. double check they exist
+- References [not counted in the word limit]
+- Contribution section [not counted in the word limit]
+
+    % [Important] Clearly explain how each team member (including their full name and surname) contributed to the project. Please be specific. Use each individual road map for this section (claude XXX.md or roadmap XXX.md). here is a base
+
+    Most of the work was equal and the same. We divided the work by model families, and then did the same work in parallel on those families and then regrouped the results to compare, summarize and analyse the results, with interpretations on the results. reports were done weekly among the team members first, and then another meeting with the supervisor was also organized weekly to present results from past week as well as planning next week project. 
+
+    Antoine Besson: DETR
+    Jesus Sebastian Lamas : YOLO v7 - v7x, YOLOx-l, -m ,-x and damo yolo. 
+    Mohamed Yassine AOUIDET : YOLOv5-11 excluding v7 
+    Charles Kayssieh : Two stages R-CNN 
+    Pacome KENGALI FEGUE : RetinaNet-R50, FCOSS-R50 and the EfficientDet familly (D4, D5 and D6)
+    Vansh Nath : RT-DETR 
+    
+    
+    The reports were written together during the first meeting of the week. 
+    -\> more details on what we need
+
+
+    % another question : Briefly describe how you worked as a team and what tools you used to organize yourselves. write it better : 
+
+    We had a whatsapp group, bi weekly meeting - google meet or irl - (with and without supervisor), we used gitlab to share common code files, and overleaf to write our report. we used overleaf.enst to share the files.  
+
+
+    
+ % Section on use of AI tools [not counted in the word limit] - please be transparent.
+  - In the code
+  - In the report
+
+As suggested by our supervisor, AI-based assistants were used for coding support, including code scaffolding, debugging Python scripts, documenting commands, improving the README, and helping adapt benchmarking/profiling scripts. 
+
+AI-based assistants were also used to help planning, organising, and for technical clarification of profiling terminology and outputs, for example understanding the meaning of outputs produced by torch.profiler and NVIDIA Nsight. The interpretation of the measurements and the conclusions were performed by the authors.
+
+They were also used for writing assistance limited to clarity, grammar, and typo correction. 
+
+  
+\end{document}
